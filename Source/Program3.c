@@ -35,9 +35,9 @@ int main()
     else if( units_consumed < 200 )
         gross_charges = 0.80 * units_consumed;
     else if( units_consumed > 200 && units_consumed < 300 )
-        gross_charges = 0.90 * units_consumed;
+        gross_charges = (0.9 * (units_consumed - 200))+(0.80 * 200);
     else if( units_consumed > 300 )
-        gross_charges = units_consumed;
+        gross_charges = units_consumed+(0.9 * 100)+(0.80 * 200);
     
     printf("Customer Name  : %s\n", name);
     printf("Units Consumed : %lf\n", units_consumed);
