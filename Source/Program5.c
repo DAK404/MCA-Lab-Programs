@@ -2,11 +2,7 @@
 
 Develop a program to implement matrix multiplication using 2D arrays.
 
-Additional Notes: 
-    - Code Credits: JavaTPoint (https://www.javatpoint.com/matrix-multiplication-in-c)
-    - Code has been formatted for better readability
-
-Author : Deepak Anil Kumar (https://github.com/DAK404/)
+Author : KP Srikanth
 Date   : 14-April-2021
 
 */
@@ -15,37 +11,43 @@ Date   : 14-April-2021
 
 int main()
 {
-    int a[10][10], b[10][10], mul[10][10], r, c, i, j, k;    
+   int a[20][20],b[20][20],c[20][20];
+   int m,n,p,q,i,j,k;
+   printf("Enter rows and columns of matrix A\n");
+   scanf("%d%d",&m,&n);
+   printf("Enter rows and columns of matrix B\n");
+   scanf("%d%d",&p,&q);
+   if(n!=p)
+   {
+      printf("Matrix multiplication not possible\n");
+      return 0;
+   }
 
-    printf("enter the number of row=");    
-    scanf("%d",&r);   
+   printf("Enter elements of matrix A\n");
+   for(i=0;i<m;i++)
+      for(j=0;j<n;j++)
+        scanf("%d",&a[i][j]);
 
-    printf("enter the number of column=");    
-    scanf("%d",&c);   
+   printf("Enter elements of matrix B\n");
+   for(i=0;i<p;i++)
+      for(j=0;j<q;j++)
+         scanf("%d",&b[i][j]);
 
-    printf("enter the first matrix element=\n");    
-    for( i = 0 ; i < r ; i++ )
-        for( j = 0 ; j < c ; j++ )
-            scanf("%d", &a[i][j]);
-    
-    printf("enter the second matrix element=\n");    
-    for( i=0 ; i < r ; i++ )
-        for( j = 0 ; j < c ; j++ )
-            scanf("%d", &b[i][j]);
-    
-    printf("multiply of the matrix=\n");    
-    for( i = 0 ; i < r ; i++ )    
-        for( j = 0 ; j < c ; j++ )    
-        {
-            mul[i][j]=0;    
-            for( k=0 ; k < c ;k++ )    
-                mul[i][j] += a[i][k] * b[k][j];    
-        }
+   for(i=0;i<p;i++)
+      for(j=0;j<q;j++)
+      {
+       c[i][j]=0;
+       for(k=0;k<n;k++)
+          c[i][j]=c[i][j]+a[i][k]*b[k][j];
+      }
 
-    for( i = 0 ; i<r ; i++ )    
-        for( j = 0 ; j < c ; j++ )    
-            printf("%d\t",mul[i][j]);    
-    printf("\n");    
-   
-    return 0;  
-}  
+   printf("Product of two matrices is\n");
+   for(i=0;i<m;i++)
+   {
+      for(j=0;j<q;j++)
+        printf("%d ",c[i][j]);
+      printf("\n");
+   }
+
+    return 0;
+}
