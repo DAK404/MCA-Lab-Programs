@@ -10,3 +10,8 @@ gcc Program7.c -o ../Binaries/Program07 -lm
 gcc Program8.c -o ../Binaries/Program08 -lm
 gcc Program9.c -o ../Binaries/Program09 -lm
 gcc Program10.c -o ../Binaries/Program10 -lm
+gcc Program11.c -o ../Binaries/Program11 -lm
+gcc Program12.c -o ../Binaries/Program12 -lm
+gcc Program13.c -o ../Binaries/Program13 -lm
+gcc Program14.c -o ../Binaries/Program14 -lm
+gcc Program15.c -o ../Binaries/Program15 -lm
