@@ -35,8 +35,7 @@ def palindrome(string):
 print("1.Check Perfect Number or Not")
 print("2.Check Armstrong Number or Not")
 print("3.Check Number is Palindrome or Not")
-print("4.Check String is Palindrome or Not")
-print("5.Exit")
+print("4.Exit")
 
 while True:
     choice=int(input("Enter Your Choice: "))
@@ -45,10 +44,8 @@ while True:
     elif choice==2:
         armstrong_number(int(input("Enter an Integer To Check Armstrong Number or Not : ")))
     elif choice==3:
-        palindrome(int(input("Enter an Integer To Check Palindrome : ")))
+        palindrome(input("Enter an Integer To Check Palindrome : "))
     elif choice==4:
-        palindrome(input("Enter String To Check Palindrome or Not: "))
-    elif choice==5:
         exit()
     else:
         print("Please enter a valid choice")
