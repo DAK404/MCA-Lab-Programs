@@ -1,30 +1,34 @@
-# Data Structures in C - Lab Programs
+# MCA Lab Programs 
+### REVA University 
 
 ---
 
-## About
-
-These are the Lab Programs which were in MCA 1st Semester. The programs have been written and optimized to reduce the code size and readability.
-
-Note:
-
-* Additional information has been attached in the source code.
-* Comments have not been attached to demonstrate the source code.
-* These programs are for lab demonstration of data structures and concepts in C. Not intended to be used as a real world program(s).
+## **Introduction**
 
 ---
 
-## Contributors:
+Lab programs for the MCA subjects. Mainly contributed by [DAK404](https://github.com/DAK404).
 
-* Deepak Anil Kumar (https://github.com/DAK404)
-* Sukruth BK
-* Any other references has been specified in the C source files.
+Please open a Pull Request if you want to help in optimizing the code.
 
 ---
 
-## Additional Information
+## Contents
 
-Feel free to open an issue or a pull request in case you
-feel like improving and optimizing the code.
+The repo will be updated every semester for every subject with a lab.
+
+As of now, there are the following subjects here
+
+* Data Structures on C
+* Object Oriented Programming using Java
+* Python Programming
+
+---
+
+## Notes
+
+---
+
+The code is always free and Open source.
 
 ---

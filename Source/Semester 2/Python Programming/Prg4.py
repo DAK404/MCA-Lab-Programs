@@ -14,14 +14,14 @@
 ############################################
 
 fName = input("Enter the file name: ")
+print("File Handling Demo")
+print("1.Create File")
+print("2.Append Something in File")
+print("3.Erase File Data")
+print("4.Read File")
+print("5.Exit")
 while True:
-    print("File Handling Demo")
-    print("1.Create File")
-    print("2.Append Something in File")
-    print("3.Erase File Data")
-    print("4.Read File")
-    print("5.Exit")
-    cho=int(input("\nEnter Your Choice:"))
+    cho=int(input("\nEnter your choice: "))
     if cho==1:
         file = open(fName,'w')
         text=input("Enter data:")
@@ -45,4 +45,3 @@ while True:
         exit()
     else:
         print("Please enter a valid choice")
-    input("Press Enter To Continue.")
