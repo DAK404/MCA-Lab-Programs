@@ -12,18 +12,18 @@
 #                                          #
 ############################################
 
-import math
 from math import factorial
 
+def fun_fact(n):
+    fact=1
+    for i in range(n):
+        fact=fact+fact*i
+    print("Factorial of ",n," is =",fact)
+
 print("Finding Factorial of Given Number")
-
-fact=1
-num1=int(input("Enter Any Number For Factorial:"))
-for i in range(num1):
-    fact=fact+fact*i
-print("Factorial of {0} is =".format(num1),fact)
-
-n=int(input("Enter Any Number For Factorial:"))
+n=int(input("Enter Any Number For Factorial(User Defined Function):"))
+fun_fact(n)
+n=int(input("Enter Any Number For Factorial(Built in Function):"))
 if n<0:
     print("Enter Positive Integer")
-print("Factorial of",n,"is", factorial(num))
+print("Factorial of",n,"is = ", factorial(n))
