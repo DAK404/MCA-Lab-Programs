@@ -15,29 +15,20 @@
 #                                          #
 ############################################
 
-class person:
-    def __init__(self,n,a):
-        self.name=n
-        self.age=a
-        
-    def ShowName(self):
-        print("Your Name:",self.name)
-        
-    def ShowAge(self):
-        print("Your Age:",self.age)
-        
-class Student(person):
+class Student: 
     def __init__(self,r,n,a):
-        super().__init__(n,a)
-        self.rollno=r
-        
-    def ShowRollno(self):
-        print("Your Roll No:",self.rollno)
-        
-name=input("Enter Your Name:")
-age=int(input("Enter your Age:"))
-roll=(input("Enter Your Roll Number"))
-obj=Student(roll,name,age)
-obj.ShowName()
-obj.ShowRollno()
-obj.ShowAge()
+        self.rollno=r 
+        self.name=n 
+        self.age=a 
+         
+    def ShowDetails(self): 
+        print("Your Roll No:",self.rollno) 
+        print("Your Name:",self.name) 
+        print("Your Age:",self.age) 
+         
+name=input("Enter Your Name:") 
+age=int(input("Enter your Age:")) 
+roll=(input("Enter Your Roll Number:")) 
+print("--Student Details--")
+obj=Student(roll,name,age) 
+obj.ShowDetails()
