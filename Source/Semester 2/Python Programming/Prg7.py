@@ -17,7 +17,7 @@ def perfect_number(n):
     for x in range(1, n):
         if n % x == 0:
             sum += x
-    return("is a Perfect Number") if sum == n else print("is not a Perfect Number")
+    print(n,"is a Perfect Number") if sum == n else print(n, "is not a Perfect Number")
     
 def armstrong_number(num):
     order = len(str(num))
@@ -27,10 +27,10 @@ def armstrong_number(num):
        digit = temp % 10
        sum += digit ** order
        temp //= 10
-    return ("is an Armstrong number") if num == sum else print("is not an Armstrong number")
+    print(num, "is an Armstrong number") if num == sum else print(num, "is not an Armstrong number")
 
 def palindrome(string):
-    return("is a palindrome") if(string==string[::-1]) else return("Not a palindrome")
+    print(string,"is a palindrome") if(string==string[::-1]) else print(string, "Not a palindrome")
 
 print("1.Check Perfect Number or Not")
 print("2.Check Armstrong Number or Not")
@@ -41,17 +41,13 @@ print("5.Exit")
 while True:
     choice=int(input("Enter Your Choice: "))
     if choice==1:
-        num1=int(input("Enter an Integer To Check Perfect Number or Not : "))
-        print("{0}".format(num1),perfect_number(num1))
+        perfect_number(int(input("Enter an Integer To Check Perfect Number or Not : ")))
     elif choice==2:
-        num1=int(input("Enter an Integer To Check Armstrong Number or Not : "))
-        print("{0}".format(num1),armstrong_number(num1))
+        armstrong_number(int(input("Enter an Integer To Check Armstrong Number or Not : ")))
     elif choice==3:
-        num1=int(input("Enter an Integer To Check Palindrome : "))
-        print("{0}".format(num1),palindrome(num1))
+        palindrome(int(input("Enter an Integer To Check Palindrome : ")))
     elif choice==4:
-        num1=str(input("Enter String To Check Palindrome or Not: "))
-        print("{0}".format(num1),palindrome(num1))
+        palindrome(input("Enter String To Check Palindrome or Not: "))
     elif choice==5:
         exit()
     else:
